@@ -49,7 +49,7 @@ Tags: responsive, premium template, dsathemes, startup, html5 template, one page
 body {
 	color: #444;
 	font-size: 15px;
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-family: 'Rubik', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -85,7 +85,6 @@ body {
 /*------------------------------------------*/
 
 #content_wrapper  {
-	margin-top: 60px;
 	overflow: hidden;
 }
 
@@ -95,8 +94,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color: #222;
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
 	margin-top: 0; 
 	margin-bottom: 10px;
 }
@@ -104,13 +103,13 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
 	font-size: 26px;
 	line-height: 32px;
-	font-weight: 300;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 
 h4.small-title, .statistic-text {
 	font-size: 15px;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 20px;		
@@ -121,7 +120,7 @@ h4.small-title, .statistic-text {
 /*------------------------------------------*/
 
 p {
-	color: #444;
+	color: #222;
 	font-size: 15px;
 	line-height: 23px;
 	font-weight: 400;
@@ -169,7 +168,7 @@ a:focus {
 	background-color: #0ea29d;
 	color: #fff;
 	font-size: 13px;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;	
 	letter-spacing: 1px;
 	padding: 10px 20px;
@@ -180,6 +179,9 @@ a:focus {
 	-o-transition: all 250ms ease-in-out;
 	-ms-transition: all 250ms ease-in-out;
 	transition: all 250ms ease-in-out;
+}
+.btn-feature{
+	border: 2px solid #fff;
 }
 
 .btn:hover {
@@ -197,23 +199,18 @@ a:focus {
 }
 
 .titlebar h3 {
-	color: #2c2c2c;
+	color: #222;
 	font-size: 28px;
 	line-height: 28px;
-	font-weight: 900;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 10px;	
 }
 
-.titlebar p {
-	color: #444;
-	font-size: 18px;
-	line-height: 18px;
-	font-weight: 300;
-}
 
-.titlebar p:after {
+
+.titlebar h3:after {
     display: block;
     content: "";
     height: 1px;
@@ -268,7 +265,7 @@ a:focus {
 	color: #222;
 	font-size: 13px;
 	line-height: 60px;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	display: block;
@@ -316,47 +313,90 @@ a:focus {
 
 
 /* ==========================================================================
-03. INTRO
+   03. INTRO
    ========================================================================== */
 
 #intro {
 	width: 100%;
-	background-image: url(../img/thumbs/intro-bkg.jpg);
-	background-attachment: fixed !important;
-	background-repeat: no-repeat;
-	background-position: center center;		
-	background-size: cover;
-	border-bottom: 1px solid #ccc;
+	height: 100%;
+	position: relative;
+	top: 0px;
+	z-index: 1;
+	display: block;
+	overflow: hidden;
+	padding: 0 !important;
+}
+  
+#slides {
+	position: relative;
+}
+
+#slides .scrollable {
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	*zoom: 1;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+#slides .scrollable:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /*------------------------------------------*/
-/*	 INTRO CONTENT
+/*	 INTRO SLIDER CONTENT
 /*------------------------------------------*/
 
-#intro_content {
-	padding-top: 120px;
-	padding-bottom: 120px;
+.intro-content {
+	width: 90%; 
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 }
+.slides-containero::after{
+	content: "";
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: rgb(75, 95, 134);
+    opacity: 0.7;
+    z-index: 0;
+}
+/*------------------------------------------*/
+/*	 INTRO TEXT
+/*------------------------------------------*/
 
 #intro h2 {	
 	color: #fff;
-	font-size: 52px;
-	font-weight: 300;
-	line-height: 60px;
-	margin-top: 20px;
-	margin-bottom: 15px;
+	font-size: 50px;
+	font-weight: 600;
 	text-transform: uppercase;
+	letter-spacing: 3px;
+	line-height: 50px;
+	margin-bottom: 15px;
 }
 
-#intro h2 span {
-	font-weight: 900;
-}
-
-.intro_text p {	
+.intro-content p {	
 	color: #fff;
-	font-size: 18px;
+	font-size: 24px;
+	line-height: 30px;
 	font-weight: 300;
-	line-height: 28px;
+	padding: 0 10%;
 }
 
 /*------------------------------------------*/
@@ -365,7 +405,7 @@ a:focus {
 
 .intro_button .btn {
 	font-size: 14px;
-	margin-top: 25px;
+	margin-top: 20px;
 	padding: 14px 28px;
 }
 
@@ -391,89 +431,110 @@ a:focus {
 }
 
 /*------------------------------------------*/
-/*	 INTRO REGISTER FORM 
+/*	 SLIDES NAVIGATION  
 /*------------------------------------------*/
 
-.form_register form {	
-	background-color: #eaeaea;
-	border: 1px solid #e0e0e0;
-	-webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-	padding: 35px 15px 40px;
-	margin: 0 45px;
+.slides-navigation {
+	width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 45%;
 }
 
-.form-control:focus {
-    border-color: #0ea29d;
-	box-shadow: 0px 0px 1px rgba(14, 162, 157, 1) inset, 0px 0px 1px rgba(14, 162, 157, 1);
+.slides-navigation a {
+    position: absolute;
+    display: block;
 }
 
-.form_register h4 {
-	font-size: 18px;
-    line-height: 30px;
-	font-weight: 900;
-	letter-spacing: 0px;
+/*------------------------------------------*/
+/*	 Next Button  
+/*------------------------------------------*/
+
+.slides-navigation a.next {
+    right: 0px;
+}
+
+.slides-navigation .next.fa-angle-right {
+    color: #ddd;
+    font-size: 100px;
+    opacity: 0.2;
+    margin-right: 30px;
+}
+
+/*------------------------------------------*/
+/*	 Previous Button
+/*------------------------------------------*/
+
+.slides-navigation a.prev {
+    left: 0px;
+}
+
+.slides-navigation .prev.fa-angle-left {
+    color: #ddd;
+    font-size: 100px;
+    opacity: 0.2;
+    margin-left: 30px;
+}
+
+/*------------------------------------------*/
+/*	 Buttons Hover  
+/*------------------------------------------*/
+
+.slides-navigation .next.fa-angle-right:hover,
+.slides-navigation .prev.fa-angle-left:hover {
+	 opacity: 0.7;
+}
+
+/*------------------------------------------*/
+/*	 SCROLL DOWN MOUSE  
+/*------------------------------------------*/
+
+.scroll-down {
+    display: block;
+	width: 100%;
+    position: absolute;
+    z-index: 99;  
+    left: 0px;
+    bottom: 4%;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    color: #ddd;
+    font-size: 13px;
+	font-weight: 700;
+    text-align: center;
+	-webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 1.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 1.8s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
 }
 
-.form_register p {
-    margin-top: 30px;
-	padding: 0 20px;
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 10px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 10px);}
+    to {-moz-transform: translate(0, -0px);}    
 }
 
-.form_register a {
-	color: #0ea29d;
-	font-weight: 600;
-}
-
-/*------------------------------------------*/
-/*	  Register Form Input
-/*------------------------------------------*/
-
-.form_register .form-control {
-	height: 44px;
-	font-size: 14px;
-	font-weight: 300;
-	margin-bottom: 20px;
-	border: 1px solid #bbb;
-	-webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-	background-color: #f5f5f5;
-	color: #222;
-	-webkit-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	transition: all 300ms ease-in-out;
-}
-
-/*------------------------------------------*/
-/*	   Register Form Error Message 
-/*------------------------------------------*/
-
-.error {
-	color: #fc0000;
-	font-size: 13px;
-	font-weight: 400;
-	margin-bottom: 20px;
-}
-
-/*------------------------------------------*/
-/*	 Register Form Button
-/*------------------------------------------*/
-
-#form_register_btn .btn {
-	font-size: 14px;
-	margin-top: 10px;
-	padding: 15px 50px;
+.mouse {
+    width: 18px;
+    height: 28px;
+	color: #ddd;
+	border: 2px solid #ddd;
+    border-radius: 9px;
+	-webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    display: block;
+    text-align: center;
+    margin: 0px auto 10px; 
 }
 
 
@@ -483,7 +544,7 @@ textarea {
    ========================================================================== */
 
 #services {
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
@@ -692,7 +753,10 @@ textarea {
 #promo {
 	background-color: #0ea29d;
 	background-image: url(../img/parallax_bg/call-to-action.png);
-	padding-top: 100px;
+	background-attachment: fixed !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+	padding-top: 70px;
 	padding-bottom: 70px;	
 } 
 
@@ -722,11 +786,11 @@ textarea {
 /*------------------------------------------*/
 
 #promo-content h3 {
-	color: #fff;	
+	color: #444;	
 } 
 
 #promo-content p {
-	color: #fff;
+	color: #444;
 	margin-bottom: 10px;	
 }
 
@@ -759,11 +823,11 @@ textarea {
    08. STATISTIC BANNER
    ========================================================================== */  
    
-#statistic_banner {
+   #statistic_banner {
 	position: relative;
 	background-image: url(../img/parallax_bg/IN_CAR.png); 
 	background-attachment: fixed !important;
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 100px;
@@ -778,7 +842,7 @@ textarea {
     display: block;
     position: absolute;
     background-color: #4b5f86;
-    opacity: .8;
+    opacity: .6;
     z-index: 0;
 }
 /*------------------------------------------*/
@@ -786,11 +850,10 @@ textarea {
 /*------------------------------------------*/ 
 
 .statistic-number {
-	
 	color: #fff;
 	font-size: 75px;
 	line-height: 75px;
-	font-weight: 900;
+	font-weight: 600;
 	letter-spacing: 1px;	
 	margin-bottom: 10px;
 }
@@ -798,14 +861,12 @@ textarea {
 .statistic-text {
 	color: #fff;
 	margin-bottom: 10px;
-	font-weight: 600;
 }
 
 .statistic-block p {
 	color: #fff;
 	padding: 0 5px;
 	margin-bottom: 0;
-	font-weight: 600;
 }
 
 
@@ -815,9 +876,8 @@ textarea {
    ========================================================================== */
    
 #team {
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 50px;	
-	background-color: #f5f5f5;
 }
 
 /*------------------------------------------*/
@@ -842,7 +902,7 @@ textarea {
 
 .team-img-meta h5 {
 	font-size: 14px;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;	
 	margin: 20px 0px 5px;
@@ -960,7 +1020,7 @@ textarea {
 
 #newsletter { 
 	background-color: #0ea29d;
-	background-image: url(../img/parallax_bg/call-to-action.png);	
+	background-image: url(../img/parallax_bg/call-to-action.png);
 	background-attachment: fixed !important;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -975,7 +1035,7 @@ textarea {
 #newsletter h3 {
 	color: #fff;
 	font-size: 28px;
-	font-weight: 900;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	line-height: 28px;
@@ -988,6 +1048,14 @@ textarea {
 	font-weight: 300;
 	margin-bottom: 0px;
 }
+.offer{
+	margin-left: 80px;	
+}
+
+.offer-title{
+	text-align: center;
+	margin-bottom: 20px;
+}
 
 /*------------------------------------------*/
 /*	  Newsletter Form Input
@@ -995,7 +1063,7 @@ textarea {
 
 #newsletter form input[type="email"] {
     background-color: #fff;
-	width: 35%;
+	width: 30%;
 	color: #414141;
 	font-size: 14px;
     font-weight: 300;
@@ -1008,7 +1076,7 @@ textarea {
 
 #newsletter form input[type="text"]{
 	background-color: #fff;
-	width: 35%;
+	width: 30%;
 	color: #414141;
 	font-size: 14px;
     font-weight: 300;
@@ -1018,7 +1086,7 @@ textarea {
     -moz-border-radius: 0px;
 	border-radius: 0px;
 	margin-left: 3px;
-	margin-right: 3px;
+	
 }
 
 #newsletter form input[type="submit"] {
@@ -1026,10 +1094,10 @@ textarea {
 	background-color: #0b7d79;
 	color: #fff;
 	font-size: 14px;
-    font-weight: 900;
+    font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-    margin-left: -12px;
+    margin-left: 3px;
     padding: 16px 22px;
 	border: 2px solid #fff;
     -webkit-border-radius: 0px;
@@ -1040,7 +1108,9 @@ textarea {
 	-o-transition: all 250ms ease-in-out;
 	-ms-transition: all 250ms ease-in-out;
 	transition: all 250ms ease-in-out;
+	
 }
+
 
 #newsletter form input[type="submit"]:hover {
 	background-color: #444;
@@ -1059,7 +1129,7 @@ textarea {
    ========================================================================== */
 
 #portfolio {
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 70px;
 	position: relative;
 }
@@ -1261,7 +1331,8 @@ textarea {
 #features-list {
 	background-color: #f5f5f5;
 	border-top: 1px solid #eee;
-	padding-top: 100px;	
+	padding-top: 50px;	
+	padding-bottom: 50px;
 }
 
 /*------------------------------------------*/
@@ -1307,7 +1378,7 @@ textarea {
     position: absolute;
     left: 0px;
     top: 3px;
-	color: #0ea29d;
+	color: #444;
     line-height: 18px;
     text-align: center;
     font-size: 18px;
@@ -1441,7 +1512,7 @@ textarea {
    ========================================================================== */
 
 #pricing {
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 } 
 
@@ -1678,7 +1749,7 @@ textarea {
    18. BOTTOM PROMO LINE 
    ========================================================================== */ 
 
-#bottom-promo_line {
+   #bottom-promo_line {
 	position: relative;
 	background-image: url(../img/parallax_bg/e89a3c7107eb948403671ed0ac735151.jpg);	
 	background-attachment: fixed !important;
@@ -1707,7 +1778,7 @@ textarea {
 
 #bottom-promo_line h2 {
 	color: #fff;
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 36px;
 	font-weight: 900; 
 	letter-spacing: 1px;
@@ -1717,8 +1788,8 @@ textarea {
 
 #bottom-promo_line p {
 	color: #fff;
-	font-size: 30px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 300;
 	line-height: 36px;
 }
 
@@ -1807,12 +1878,71 @@ textarea {
 
 #contact {
 	padding-top: 100px;
-	padding-bottom: 75px;
+	
 } 
+
+/*------------------------------------------*/
+/*	  CONTACT FORM
+/*------------------------------------------*/
+
+#contact-form .form-control {
+	height: 50px;
+	font-size: 14px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 0 0;
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	background-color: #f3f3f3;
+	color: #444;
+	font-size: 14px;
+	margin-bottom: 15px;
+	padding: 12px 0;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	box-shadow: 0 0 0 0;
+}
+
+#contact-form textarea {
+	min-height: 180px;
+}
+
+/*------------------------------------------*/
+/*	  Contact Form Input Focus
+/*------------------------------------------*/
+
+.form-control:focus {
+    outline: 0px none;
+    box-shadow: none;
+}
+
+/*------------------------------------------*/
+/*	  Contact Form Error Message 
+/*------------------------------------------*/
+
+.error {
+	color: red;
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
 
 /*------------------------------------------*/
 /*	  CONTACT INFO 
 /*------------------------------------------*/
+
+#contacts-info {
+	padding-left: 50px;
+}
 
 .contact-data {
 	margin-bottom: 25px;

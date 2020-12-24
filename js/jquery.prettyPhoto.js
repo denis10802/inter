@@ -59,7 +59,7 @@
 												<p class="currentTextHolder">0/0</p> \
 												<a href="#" class="pp_arrow_next">Next</a> \
 											</div> \
-											  \
+											\
 											<a class="pp_close" href="#">Close</a> \
 										</div> \
 									</div> \

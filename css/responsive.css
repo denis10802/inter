@@ -19,28 +19,8 @@
 	/*	 INTRO CONTENT
 	/*------------------------------------------*/
 	
-	#intro_content { padding-top: 130px; padding-bottom: 140px; }
-	#intro h2 {	font-size: 45px; line-height: 52px; margin-bottom: 15px; }
-	.intro_text p {	font-size: 16px; line-height: 26px; }
-	
-	/*------------------------------------------*/
-	/*	 INTRO BUTTON
-	/*------------------------------------------*/
-
-	.intro_button .btn { margin-top: 20px; }
-	
-	/*------------------------------------------*/
-	/*	 INTRO REGISTER FORM 
-	/*------------------------------------------*/
-
-	.form_register form { margin: 0 12px; padding: 25px 15px 30px; }
-	.form_register h4 { font-size: 16px; }
-	
-	/*------------------------------------------*/
-	/*	  Register Form Input
-	/*------------------------------------------*/
-
-	.form_register .form-control { height: 42px; font-size: 15px; }
+	#intro h2 {	font-size: 44px; line-height: 44px; }
+	.intro-content p { font-size: 20px; line-height: 28px; padding: 0 10%; }
 	
 	/*------------------------------------------*/
 	/*	TABS NAV
@@ -97,9 +77,11 @@
 	/*	  Newsletter Form Input
 	/*------------------------------------------*/
 
-	#newsletter form input[type="email"] {width: 55%; font-size: 14px; }
-	#newsletter form input[type="submit"] {width: 42%; font-size: 14px; }
-	
+
+	#newsletter form input[type="email"] {width: 100%; font-size: 13px;padding: 12px 18px; margin-bottom: 10px;text-align: center;}
+	#newsletter form input[type="text"] {width: 100%; font-size: 13px;padding: 12px 18px; margin-bottom: 10px;margin-left: 0;text-align: center;}
+	#newsletter form input[type="submit"] {width: 100%; font-size: 13px; padding: 12px 18px; margin-left: 0;text-align: center;}
+	.offer {margin-left: 0;}
 	/*------------------------------------------*/
 	/*	 Portfolio Overlay Content 
 	/*------------------------------------------*/
@@ -161,10 +143,7 @@
 	/*	  CONTACT INFO 
 	/*------------------------------------------*/
 	
-	.contact-data { padding: 0 10px;}
-	.contact-data h4 { font-size: 14px; }	
-	.contact-data p { font-size: 14px; }
-	
+	#contacts-info { padding-left: 40px; }
 
 	
 }
@@ -188,12 +167,11 @@
 	.navbar-nav > li > a { padding: 0 10px; }
 	
 	/*------------------------------------------*/
-	/*	 INTRO CONTENT
+	/*	 INTRO TEXT
 	/*------------------------------------------*/
-			
-	#intro_content { text-align: center;}
-	#intro h2 {	font-size: 42px; line-height: 48px; }
-	.intro_text p { font-size: 16px; line-height: 26px; padding: 0 5%; }
+
+	#intro h2 {	font-size: 40px; line-height: 40px; letter-spacing: 2px; }
+	.intro-content p { font-size: 18px; line-height: 26px; padding: 0 9%; }
 	
 	/*------------------------------------------*/
 	/*	 INTRO BUTTON
@@ -202,12 +180,11 @@
 	.intro_button .btn { font-size: 13px; margin-top: 20px; }
 	
 	/*------------------------------------------*/
-	/*	 INTRO REGISTER FORM  
+	/*	 SLIDES NAVIGATION  
 	/*------------------------------------------*/
-
-	.form_register form { width: 65%; margin: 40px auto 0; }
-	.form_register h4 { font-size: 16px; }
-	.form_register p { padding: 0 25px; }
+	
+	.slides-navigation .next.fa-angle-right, 
+	.slides-navigation .prev.fa-angle-left { font-size: 80px; }
 	
 	/*------------------------------------------*/
 	/*	 OUR PROCESS
@@ -326,10 +303,17 @@
 	.question p { font-size: 14px; line-height: 22px;}
 	
 	/*------------------------------------------*/
+	/*	  CONTACT FORM
+	/*------------------------------------------*/
+	
+	#contact-form textarea {min-height: 130px;}
+	
+	/*------------------------------------------*/
 	/*	  CONTACT INFO 
 	/*------------------------------------------*/
 	
-	.contact-data { text-align: center; }	
+	#contacts-info { padding-left: 15px; }	
+	.contact-data p { font-size: 14px; }
 	
 	/*------------------------------------------*/
 	/*	 CALL TO ACTION TEXT
@@ -376,26 +360,29 @@
 	.navbar-nav > li > a { line-height: 40px; text-align: center;}
 	.navbar-fixed-top .navbar-collapse,
 	.navbar-fixed-bottom .navbar-collapse { max-height: 400px;}
-	
+
 	/*------------------------------------------*/
-	/*	 INTRO CONTENT
-	/*------------------------------------------*/
-			
-	#intro h2 {	font-size: 36px; line-height: 42px; margin-top: 0; margin-bottom: 20px; }
-	.intro_text p { font-size: 16px; line-height: 24px; padding: 0 8%; }
-	
-	/*------------------------------------------*/
-	/*	 INTRO REGISTER FORM  
+	/*	 INTRO TEXT
 	/*------------------------------------------*/
 
-	.form_register form { width: 60%; }
+	#intro h2 {	font-size: 30px; line-height: 30px; }
+	.intro-content p { font-size: 16px; line-height: 22px; padding: 0 10%; }
+	
+	/*------------------------------------------*/
+	/*	 SLIDES NAVIGATION  
+	/*------------------------------------------*/
+	
+	.slides-navigation .next.fa-angle-right, 
+	.slides-navigation .prev.fa-angle-left { font-size: 60px; }
 	
 	/*------------------------------------------*/
 	/*	 MAILCHIMP NEWSLETTER FORM
 	/*------------------------------------------*/
 	
-	#newsletter { text-align: center;}
-	
+	#newsletter form input[type="email"] {width: 100%; font-size: 13px;padding: 12px 18px; margin-bottom: 10px;text-align: center;}
+	#newsletter form input[type="text"] {width: 100%; font-size: 13px;padding: 12px 18px; margin-bottom: 10px;margin-left: 0;text-align: center;}
+	#newsletter form input[type="submit"] {width: 100%; font-size: 13px; padding: 12px 18px; margin-left: 0;}
+	.offer {margin-left: 0;}
 	/*------------------------------------------*/
 	/*	 BOTTOM PROMO LINE CONTENT
 	/*------------------------------------------*/  
@@ -429,17 +416,13 @@
 @media only screen and (max-width: 640px){
 		
 	/*------------------------------------------*/
-	/*	 INTRO CONTENT
+	/*	 INTRO TEXT
 	/*------------------------------------------*/
-			
-	#intro h2 {	font-size: 34px; line-height: 40px; margin-bottom: 15px; padding: 0 4%; }
-	.intro_text p { font-size: 16px; line-height: 24px; padding: 0 8%; }	
 	
-	/*------------------------------------------*/
-	/*	 INTRO REGISTER FORM  
-	/*------------------------------------------*/
-
-	.form_register form { width: 70%; }
+	#intro h2 {	font-size: 28px; line-height: 28px; letter-spacing: 1px; }
+	.intro-content p { font-size: 16px; line-height: 24px; padding: 0 5%; }
+	
+	.slides-navigation { display: none;}	
 
 	/*------------------------------------------*/
 	/*	 SERVICE BOX 
@@ -537,50 +520,21 @@
 	/*	 INTRO CONTENT
 	/*------------------------------------------*/
 
-	#intro_content { padding-top: 100px; padding-bottom: 110px; }
-	#intro h2 {	font-size: 28px; line-height: 34px; padding: 0; }
-	.intro_text p { font-size: 14px; padding: 0;}
+	.intro-content { width: 100%; } 
+	#intro h2 {	font-size: 22px; line-height: 22px; }
+	.intro_text p { font-size: 14px; line-height: 22px; padding: 0 5%;}
 	
 	/*------------------------------------------*/
 	/*	 INTRO BUTTON
 	/*------------------------------------------*/
 
-	.intro_button {margin-left: 0; }
 	.intro_button .btn { padding: 12px 30px; }
-	
-	/*------------------------------------------*/
-	/*	 Transparent Button
-	/*------------------------------------------*/
-
-	.intro_button .btn.btn-tra { padding: 11px 24px; }
-	
-	/*------------------------------------------*/
-	/*	 INTRO REGISTER FORM  
-	/*------------------------------------------*/
-
-	.form_register form { width: 90%; margin: 30px auto 0;}
-	
-	.form_register h4 { font-size: 15px; }
-	.form_register p { font-size: 14; padding: 0 10px; }	
-	
-	/*------------------------------------------*/
-	/*	  Register Form Input
-	/*------------------------------------------*/
-
-	.form_register .form-control { height: 40px; font-size: 14px; }
-
-	/*------------------------------------------*/
-	/*	 Register Form Button
-	/*------------------------------------------*/
-
-	#form_register_btn .btn { padding: 12px 30px; }
 	
 	/*------------------------------------------*/
 	/*	TABS NAV
 	/*------------------------------------------*/
 	
-	.nav-tabs { border-bottom: none; }
-	
+	.nav-tabs { border-bottom: none; }	
 	.nav-tabs li { display: block; width: 100%; margin-bottom: 5px; }
 	
 	/*------------------------------------------*/
@@ -596,14 +550,15 @@
 	#newsletter h3 { font-size: 26px; line-height: 26px; }
 	#newsletter h4 { font-size: 16px; line-height: 20px; padding: 0 5%;}
 	
+	
 	/*------------------------------------------*/
 	/*	  Newsletter Form Input
 	/*------------------------------------------*/
 
 	#newsletter form input[type="email"] {width: 100%; font-size: 13px;padding: 12px 18px; margin-bottom: 10px;}
-	#newsletter form input[type="text"] {width: 100%; font-size: 13px;padding: 12px 18px; margin-bottom: 10px;}
+	#newsletter form input[type="text"] {width: 100%; font-size: 13px;padding: 12px 18px; margin-bottom: 10px;margin-left: 0;}
 	#newsletter form input[type="submit"] {width: 100%; font-size: 13px; padding: 12px 18px; margin-left: 0;}
-	
+	.offer {margin-left: 0;}
 	/*------------------------------------------*/
 	/*	   Button Settings
 	/*------------------------------------------*/ 
@@ -636,10 +591,12 @@
 	.question h4 { font-size: 13px; }
 	
 	/*------------------------------------------*/
-	/*	  CONTACT INFO 
+	/*	  CONTACT FORM
 	/*------------------------------------------*/
-	
-	.contact-data { width: 100%; float: none !important; }
+
+	#contacts-info .contact-data { width: 100%; float: none !important; text-align: center; }
+	#contact-form .form-control { height: 40px; font-size: 13px; }
+	#contact-form textarea { min-height: 120px; }
 	
 	/*------------------------------------------*/
 	/*	 CALL TO ACTION TEXT
@@ -684,48 +641,21 @@
 	/*------------------------------------------*/
 	/*	 INTRO CONTENT
 	/*------------------------------------------*/
-
-	#intro h2 {	font-size: 22px; line-height: 26px; }
-	.intro_text p { font-size: 14px; line-height: 18px; padding: 0; }
 	
-	/*------------------------------------------*/
-	/*	 INTRO CONTENT
-	/*------------------------------------------*/
-
-	#intro h2 {	font-size: 22px; line-height: 28px; padding: 0; }
-	.intro_text p { padding: 0; }
+	#intro h2 {	font-size: 20px; line-height: 26px; padding: 0 2%; }
+	.intro_slide p { font-size: 13px; line-height: 20px; padding: 0; }
 	
 	/*------------------------------------------*/
 	/*	 INTRO BUTTON
 	/*------------------------------------------*/
 
-	.intro_button .btn { font-size: 13px; font-weight: 900; letter-spacing: 0px; padding: 9px 18px; }
+	.intro_button .btn { font-size: 13px; letter-spacing: 0px; padding: 9px 18px; }
 	
 	/*------------------------------------------*/
 	/*	 Transparent Button
 	/*------------------------------------------*/
 
 	.intro_button .btn.btn-tra { padding: 7px 16px; }
-	
-	/*------------------------------------------*/
-	/*	 INTRO REGISTER FORM  
-	/*------------------------------------------*/
-
-	.form_register form { width: 100%; margin: 30px auto 0; padding: 20px 5px 30px;}
-	.form_register h4 {font-size: 13px; letter-spacing: 1px; }
-	
-	/*------------------------------------------*/
-	/*	  Register Form Input
-	/*------------------------------------------*/
-
-	.form_register .form-control  {height: 34px; font-size: 13px; margin-bottom: 10px; }
-	.form_register p { font-size: 13px; padding: 0 12px; margin-top: 15px; }
-	
-	/*------------------------------------------*/
-	/*	 Register Form Button
-	/*------------------------------------------*/
-
-	#form_register_btn .btn { font-size: 13px; font-weight: 700; letter-spacing: 0px; padding: 9px 18px;  }
 	
 	/*------------------------------------------*/
 	/*	ABOUT, ABOUT-1  Small Title

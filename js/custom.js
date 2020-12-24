@@ -78,6 +78,17 @@
 		
 		
 		/*----------------------------------------------------*/
+		/*	Intro Slider
+		/*----------------------------------------------------*/
+	
+		$("#slides").superslides({
+			play: 6000,
+			animation: "fade",
+			pagination: true
+		});
+		
+		
+		/*----------------------------------------------------*/
 		/*	Animated Scroll To Anchor
 		/*----------------------------------------------------*/
 		
@@ -234,33 +245,40 @@
 
 	
 		/*----------------------------------------------------*/
-		/*	Register Form Validation
+		/*	Contact Form Validation
 		/*----------------------------------------------------*/
 		
-		$(".form_register form").validate({
+		$("#contact-form").validate({
 			rules:{ 
 				first_name:{
 					required: true,
-					minlength: 2,
+					minlength: 1,
 					maxlength: 16,
 					},
 					email:{
 						required: true,
 						email: true,
 					},
-					phone:{
+					subject:{
 						required: true,
-						digits: true,
+						minlength: 4,
+						maxlength: 24,
+					},		
+					message:{
+						required: true,
+						minlength: 2,
 						}
 					},
 					messages:{
+							first_name:{
+								required: "Please enter no more than (1) characters"
+							}, 
 							email:{
 								required: "We need your email address to contact you",
 								email: "Your email address must be in the format of name@domain.com"
 							}, 
-							phone:{
-								required: "Please enter only digits",
-								digits: "Please enter a valid number"
+							message:{
+								required: "Please enter no more than (2) characters"
 							}, 
 						}
 		});			
@@ -269,35 +287,7 @@
 		/*----------------------------------------------------*/
 		/*	Newsletter Subscribe Form
 		/*----------------------------------------------------*/
-	
-		$('#newsletter_form').submit(function() {
-			if (!valid_email_address($("#s_email").val()))
-				{
-					$(".message").html("<span style='color:red;'>The email address you entered was invalid. Please make sure you enter a valid email address to subscribe.</span>");
-				}
-			else
-				{
-					$(".message").html("<span style='color:#eee;'>Adding your email address...</span>");
-						$.ajax({
-						url: 'subscribe.php',
-						data: $('#newsletter_form').serialize(),
-						type: 'POST',
-						success: function(msg) {
-							if(msg=="success")
-								{
-									$("#s_email").val("");
-									$(".message").html('<span style="color:#eee;">You have successfully subscribed to our mailing list.</span>');
-								}
-							else
-								{
-									$(".message").html("<span style='color:red;'>The email address you entered was invalid. Please make sure you enter a valid email address to subscribe.</span>");
-								}
-						}
-					});
-				}
-		 
-				return false;			
-		});
+				
 
 		
 	});		

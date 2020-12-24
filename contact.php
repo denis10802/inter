@@ -54,7 +54,8 @@
 				   
 				$first_name = $_POST['first_name']; // required 
 				$email_from = $_POST['email']; // required
-				$phone = $_POST['phone']; // required
+				$subject = $_POST['subject']; // required
+				$comments = $_POST['message']; // required
 				 
 				$email_message = "Form details below.\n\n";
 				 
@@ -67,7 +68,8 @@
 				 
 				$email_message .= "Name: ".clean_string($first_name)."\n";
 				$email_message .= "Email Address: ".clean_string($email_from)."\n";
-				$email_message .= "Phone Number: ".clean_string($phone)."\n";
+				$email_message .= "Subject: ".clean_string($subject)."\n";
+				$email_message .= "Message: ".clean_string($comments)."\n";
 				 
 					 
 				// create email headers

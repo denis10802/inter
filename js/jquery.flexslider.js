@@ -21,7 +21,7 @@
         vertical = vars.direction === "vertical",
         reverse = vars.reverse,
         carousel = (vars.itemWidth > 0),
-        fade = vars.animation === "fade",
+        fade = vars.animation === "slider",
         asNav = vars.asNavFor !== "",
         methods = {};
     
