@@ -406,7 +406,7 @@ a:focus {
 .intro_button .btn {
 	font-size: 14px;
 	margin-top: 20px;
-	padding: 14px 28px;
+	padding: 14px 18px;
 }
 
 .intro_button .btn:hover {
@@ -918,65 +918,24 @@ a:focus {
 }
 
 /*------------------------------------------*/
-/*	  Team Member Social Icons 
+/*	  Team Member 
 /*------------------------------------------*/
-
-.team-member-socials {
-	text-align: right;
-	display: inline-block;
-	margin: 0 auto;
+.team-img-meta{
+	text-align: center;
+}
+.card-btn{
+	width: 80%;
+	
+}
+.card_button{
+	text-align: center;
+	
 }
 
-.team-member-socials li {
-	float: left;
-    display: inline-block !important;
-    vertical-align: top;
-    width: auto !important;
-    clear: none !important;
-}
 
-.page_social {
-	color: #666;
-	font-size: 15px; 
-    text-align: center;
-    display: block;
-	padding-right: 15px;
-    text-decoration: none;
-	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	-ms-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
-}
 
-/*------------------------------------------*/
-/*	 Team Member Social Icons Hover 
-/*------------------------------------------*/
 
-.page_social.ico_facebook:hover {color: #3b5998;}
-.page_social.ico_twitter:hover {color: #00a9ed;}
-.page_social.ico_behance:hover {color: #00a8e7; }
-.page_social.ico_google_plus:hover {color: #cd1111;}
-.page_social.ico_linkedin:hover {color: #015886;}
-.page_social.ico_dribbble:hover {color: #d92d84;}
-.page_social.ico_instagram:hover {color: #beb3a8;}
-.page_social.ico_pinterest:hover {color: #ac281a;}
-.page_social.ico_dropbox:hover {color: #008ad2;}
-.page_social.ico_skype:hover {color: #00a9ed; }
-.page_social.ico_youtube:hover {color: #cd1b20; }
-.page_social.ico_tumblr:hover {color: #3a5976;}
-.page_social.ico_vimeo:hover {color: #00adee;}
-.page_social.ico_flickr:hover {color: #d2d2d2;}
-.page_social.ico_github:hover {color: #222;}
-.page_social.ico_renren:hover {color: #364a83;}
-.page_social.ico_vk:hover {color: #3b5998; }
-.page_social.ico_xing:hover {color: #015f5e;}
-.page_social.ico_weibo:hover {color: #be4443;}
-.page_social.ico_rss:hover {color: #ff6600;}
-.page_social.ico_digg:hover {color: #222;}
-.page_social.ico_deviantart:hover {color: #57675d;}
-.page_social.ico_envelope:hover {color: #999;}
-.page_social.ico_delicious:hover {color: #0A0A0A; }
+
 
 
 
@@ -1004,13 +963,8 @@ a:focus {
 /*	 BIG PROMO CONTENT
 /*------------------------------------------*/
 
-.big-promo-content h3 {
-	margin-bottom: 30px;
-}
 
-.big-promo-content p {
-	margin-bottom: 15px;
-}
+
 
 
 
@@ -1044,7 +998,7 @@ a:focus {
 
 #newsletter h4 {
 	color: #fff;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 300;
 	margin-bottom: 0px;
 }

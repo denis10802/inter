@@ -288,6 +288,40 @@
 		/*	Newsletter Subscribe Form
 		/*----------------------------------------------------*/
 				
+		$("#newsletter_form").validate({
+			rules:{ 
+				first_name:{
+					required: true,
+					minlength: 1,
+					maxlength: 16,
+					},
+					email:{
+						required: true,
+						email: true,
+					},
+					subject:{
+						required: true,
+						minlength: 4,
+						maxlength: 24,
+					},		
+					message:{
+						required: true,
+						minlength: 2,
+						}
+					},
+					messages:{
+							first_name:{
+								required: "Please enter no more than (1) characters"
+							}, 
+							email:{
+								required: "We need your email address to contact you",
+								email: "Your email address must be in the format of name@domain.com"
+							}, 
+							message:{
+								required: "Please enter no more than (2) characters"
+							}, 
+						}
+		});			
 
 		
 	});		
