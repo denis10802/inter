@@ -978,7 +978,7 @@ a:focus {
 	background-attachment: fixed !important;
 	background-position: center center;
 	background-repeat: no-repeat;
-	padding-top: 80px; 
+	padding-top: 60px; 
 	padding-bottom: 60px;
 }
 
@@ -1894,6 +1894,10 @@ a:focus {
 /*	  CONTACT INFO 
 /*------------------------------------------*/
 
+.contacts-block{
+	padding-bottom: 40px;
+}
+
 #contacts-info {
 	padding-left: 50px;
 }
@@ -1941,15 +1945,7 @@ a:focus {
 /*	 CALL TO ACTION TEXT
 /*------------------------------------------*/
 
-#call-to-action h3 {
-	color: #fff;
-	font-size: 26px;
-	line-height: 26px;
-	font-weight: 900;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin-bottom: 5px;
-}
+
 
 #call-to-action p { 
 	color: #fff; 
@@ -1963,24 +1959,7 @@ a:focus {
 /*	 Transparent Button
 /*------------------------------------------*/
 
-#call-to-action .btn.btn-tra {
-	background-color: transparent;
-	padding: 15px 50px;
-	margin-top: 0;
-	margin-right: 0;
-	border: 2px solid #fff;
-	-webkit-transition: all 250ms ease-in-out;
-	-moz-transition: all 250ms ease-in-out;
-	-o-transition: all 250ms ease-in-out;
-	-ms-transition: all 250ms ease-in-out;
-	transition: all 250ms ease-in-out;
-}
 
-#call-to-action .btn.btn-tra:hover {
-	background-color: #444;
-	border-color: #444;
-	color: #fff;
-}
 
 
 
@@ -1988,24 +1967,21 @@ a:focus {
    22. FOOTER
    ========================================================================== */ 
  
-#footer {
-	padding-top: 80px;
-	padding-bottom: 70px;
-}
+
 
 /*------------------------------------------*/
 /*	 FOOTER COPYRIGHT  
 /*------------------------------------------*/
 
 #footer_copyright p {
-	color: #444;
+	color:  #fff;
 	line-height: 26px;
 	margin-bottom: 0;
 	margin-left: 7px	;
 }
 
 #footer_copyright p span {
-	color: #0ea29d;
+	color: #fff;
 	font-weight: 700;
 }
 
@@ -2037,7 +2013,7 @@ a:focus {
 }
 
 .foo_link:hover {
-	color: #0ea29d;
+	color:  #fff;
 	text-decoration: underline;
 }
 
