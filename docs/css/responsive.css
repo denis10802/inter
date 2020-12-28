@@ -508,7 +508,7 @@
 	/*	 Logo Image    
 	/*------------------------------------------*/
 
-	.navbar-brand {padding: 6px 15px;} 
+	.navbar-brand {padding: 6px 7px; width: 80%;} 
 	
 	/*------------------------------------------*/
 	/*	 Responsive Menu Button    
