@@ -712,3 +712,41 @@
 }
  
 
+@media (max-width: 768px) {
+	.modal__body {
+	  padding: 0;
+	}
+	.modal__close {
+	  width: 6%;
+	}
+	.modal__title {
+	  margin: 0;
+	}
+	.modal__content {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+		  -ms-flex-direction: column;
+			  flex-direction: column;
+	}
+	.modal__image {
+	  width: 100%;
+	  padding-left: 0px;
+	  text-align: center;
+	}
+	.modal-list {
+	  padding-left: 70px;
+	  padding-right: 0;
+	}
+	.modal-form__button {
+	  margin-top: 0px;
+	}
+	.modal-form__subtitle {
+	  font-size: 18px;
+	}
+	.modal .form-modal {
+	  padding-left: 20px;
+	  padding-right: 20px;
+	  width: 100%;
+	}
+  }
+  
