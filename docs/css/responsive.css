@@ -529,6 +529,15 @@
 	/*------------------------------------------*/
 
 	.intro_button .btn { padding: 12px 30px; }
+	.numder-down{font-size: 20px;}
+	.numder-down_title{
+		font-size: 25px;
+	}
+	.phone, .mail{
+		left: 9rem;
+		font-size: 25px;
+		color: #000;
+	}
 	
 	/*------------------------------------------*/
 	/*	TABS NAV
@@ -656,6 +665,15 @@
 	/*------------------------------------------*/
 
 	.intro_button .btn.btn-tra { padding: 7px 16px; }
+	.numder-down{font-size: 20px;}
+	.numder-down_title{
+		font-size: 25px;
+	}
+	.phone, .mail{
+		left: 7rem;
+		font-size: 25px;
+		color: #000;
+	}
 	
 	/*------------------------------------------*/
 	/*	ABOUT, ABOUT-1  Small Title

@@ -501,7 +501,7 @@ a:focus {
     top: 10%;
 	text-transform: uppercase;
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
 	font-weight: 700;
 	text-align: center;
 	animation-duration: 1.8s;
@@ -520,6 +520,10 @@ a:focus {
 }
 .numder-down a{
 	color: #000;
+	padding-left: 40px;
+}
+.numder-down_title{
+	font-size: 30px;
 }
 .scroll-down {
     display: block;
@@ -531,7 +535,7 @@ a:focus {
 	text-transform: uppercase;
 	/* color: #0e0cb4; */
 	color: #000;
-    font-size: 13px;
+    font-size: 15px;
 	font-weight: 700;
 	text-align: center;
 	animation-duration: 1.8s;
@@ -1376,22 +1380,30 @@ a:focus {
     width: 18px;
     height: 18px;
     position: absolute;
-    left: 0px;
+    left: -5px;
     top: 3px;
-	color: #444;
+	color: #0ea29d;
     line-height: 18px;
     text-align: center;
     font-size: 18px;
+}
+.fbs{
+	left: -19px;
+}
+.mixer{
+	left: 30px;
+}
+.phone, .mail{
+	left: 65rem;
+	font-size: 25px;
+	color: #000;
 }
 
 /*------------------------------------------*/
 /*	  List Content
 /*------------------------------------------*/
 
-.list-content {
-	padding-left: 40px;
 
-}
 
 
 
