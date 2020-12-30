@@ -463,6 +463,7 @@
 	
 	.price-row .col-xs-6 { width: 100%; float: none !important; }
 	.pricing-table {margin: 0 40px; }
+	
 
 	/*------------------------------------------*/
 	/*	 BOTTOM PROMO LINE CONTENT
@@ -537,6 +538,21 @@
 		left: 9rem;
 		font-size: 25px;
 		color: #000;
+	}
+	.ks{
+		left: 20px;
+	}
+	.fbs{
+		left: 2px;
+	}
+	.mixer{
+		left: 60px;
+	}
+	.slab{
+		left: 28px;
+	}
+	.cem{
+		left: 35px;
 	}
 	
 	/*------------------------------------------*/
@@ -673,6 +689,21 @@
 		left: 7rem;
 		font-size: 25px;
 		color: #000;
+	}
+	.ks{
+		left: 4px;
+	}
+	.fbs{
+		left: -11px;
+	}
+	.mixer{
+		left: 35px;
+	}
+	.slab{
+		left: 10px;
+	}
+	.cem{
+		left: 17px;
 	}
 	
 	/*------------------------------------------*/
