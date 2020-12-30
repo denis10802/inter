@@ -497,11 +497,11 @@ a:focus {
 	width: 100%;
     position: absolute;
     z-index: 99;  
-    left: 0px;
+    left: 0%;
     top: 10%;
 	text-transform: uppercase;
     color: #000;
-    font-size: 25px;
+    font-size: 20px;
 	font-weight: 700;
 	text-align: center;
 	animation-duration: 1.8s;
@@ -529,7 +529,8 @@ a:focus {
     left: 0px;
     bottom: 4%;
 	text-transform: uppercase;
-    color: #0e0cb4;
+	/* color: #0e0cb4; */
+	color: #000;
     font-size: 13px;
 	font-weight: 700;
 	text-align: center;
@@ -545,7 +546,8 @@ a:focus {
     -moz-animation-duration: 1.8s;
     -moz-animation-iteration-count: infinite;
 	-moz-animation-timing-function: ease-in-out;
-	text-shadow: 1px 1px 2px #06faf2, 0 0 1em #06faf2, 0 0 0.2em rgb(0, 162, 255);
+	/* text-shadow: 1px 1px 2px #06faf2, 0 0 1em #06faf2, 0 0 0.2em rgb(0, 162, 255); */
+	text-shadow: #fff 1px 0 10px;
 }
 
 
@@ -564,7 +566,8 @@ a:focus {
 .mouse {
     width: 18px;
     height: 28px;
-	color: #0e0cb4;
+	/* color: #0e0cb4; */
+	color: #000;
 	border: 2px solid #ddd;
     border-radius: 9px;
 	-webkit-border-radius: 9px;
@@ -573,8 +576,10 @@ a:focus {
     display: block;
     text-align: center;
 	margin: 0px auto 10px; 
-	text-shadow: 1px 1px 2px rgb(7, 209, 192), 0 0 1em #0ea29d, 0 0 0.2em rgb(0, 162, 255);
-	box-shadow: 1px 1px 2px #06faf2, 0 0 1em  #06faf2, 0 0 0.2em rgb(0, 162, 255);
+	/* text-shadow: 1px 1px 2px rgb(7, 209, 192), 0 0 1em #0ea29d, 0 0 0.2em rgb(0, 162, 255); */
+	text-shadow: #fff 1px 0 10px;
+	/* box-shadow: 1px 1px 2px #06faf2, 0 0 1em  #06faf2, 0 0 0.2em rgb(0, 162, 255); */
+	box-shadow: #fff 1px 0 10px;
 	border-color: #000;
 }
 
