@@ -389,14 +389,16 @@ a:focus {
 	letter-spacing: 3px;
 	line-height: 50px;
 	margin-bottom: 15px;
+	text-shadow: #000 1px 0 10px;
 }
 
 .intro-content p {	
 	color: #fff;
 	font-size: 24px;
 	line-height: 30px;
-	font-weight: 300;
+	font-weight: 500;
 	padding: 0 10%;
+	text-shadow: #000 1px 0 10px;
 }
 
 /*------------------------------------------*/
@@ -443,7 +445,8 @@ a:focus {
 
 .slides-navigation a {
     position: absolute;
-    display: block;
+	display: block;
+	
 }
 
 /*------------------------------------------*/
@@ -455,9 +458,8 @@ a:focus {
 }
 
 .slides-navigation .next.fa-angle-right {
-    color: #ddd;
-    font-size: 100px;
-    opacity: 0.2;
+    color:#0ea29d;
+    font-size: 100px;    
     margin-right: 30px;
 }
 
@@ -466,14 +468,15 @@ a:focus {
 /*------------------------------------------*/
 
 .slides-navigation a.prev {
-    left: 0px;
+	left: 0px;
+	
 }
 
 .slides-navigation .prev.fa-angle-left {
-    color: #ddd;
-    font-size: 100px;
-    opacity: 0.2;
-    margin-left: 30px;
+    color:#0ea29d;
+    font-size: 100px;    
+	margin-left: 30px;
+	
 }
 
 /*------------------------------------------*/
@@ -488,7 +491,36 @@ a:focus {
 /*------------------------------------------*/
 /*	 SCROLL DOWN MOUSE  
 /*------------------------------------------*/
-
+.numder-down{
+	display: block;
+	text-align: center;
+	width: 100%;
+    position: absolute;
+    z-index: 99;  
+    left: 0px;
+    top: 10%;
+	text-transform: uppercase;
+    color: #000;
+    font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	animation-duration: 1.8s;
+	animation-name: Floatingx;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: Floatingx;	
+    -webkit-animation-duration: 1.8s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 1.8s;
+    -moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+	text-shadow: #fff 1px 0 10px;
+}
+.numder-down a{
+	color: #000;
+}
 .scroll-down {
     display: block;
 	width: 100%;
@@ -496,28 +528,34 @@ a:focus {
     z-index: 99;  
     left: 0px;
     bottom: 4%;
-    text-transform: uppercase;
-    color: #ddd;
+	text-transform: uppercase;
+    color: #0e0cb4;
     font-size: 13px;
 	font-weight: 700;
-    text-align: center;
-	-webkit-animation-name: Floatingx;
+	text-align: center;
+	animation-duration: 1.8s;
+	animation-name: Floatingx;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: Floatingx;	
     -webkit-animation-duration: 1.8s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-name: Floating;
     -moz-animation-duration: 1.8s;
     -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
+	-moz-animation-timing-function: ease-in-out;
+	text-shadow: 1px 1px 2px #06faf2, 0 0 1em #06faf2, 0 0 0.2em rgb(0, 162, 255);
 }
 
-@-webkit-keyframes Floatingx{
+
+@keyframes Floatingx{
     from {-webkit-transform:translate(0, 0px);}
     65% {-webkit-transform:translate(0, 10px);}
     to {-webkit-transform: translate(0, -0px);    }    
 }
     
-@-moz-keyframes Floating{
+@keyframes Floating{
     from {-moz-transform:translate(0, 0px);}
     65% {-moz-transform:translate(0, 10px);}
     to {-moz-transform: translate(0, -0px);}    
@@ -526,7 +564,7 @@ a:focus {
 .mouse {
     width: 18px;
     height: 28px;
-	color: #ddd;
+	color: #0e0cb4;
 	border: 2px solid #ddd;
     border-radius: 9px;
 	-webkit-border-radius: 9px;
@@ -534,7 +572,10 @@ a:focus {
     border-radius: 9px;
     display: block;
     text-align: center;
-    margin: 0px auto 10px; 
+	margin: 0px auto 10px; 
+	text-shadow: 1px 1px 2px rgb(7, 209, 192), 0 0 1em #0ea29d, 0 0 0.2em rgb(0, 162, 255);
+	box-shadow: 1px 1px 2px #06faf2, 0 0 1em  #06faf2, 0 0 0.2em rgb(0, 162, 255);
+	border-color: #000;
 }
 
 
@@ -1994,8 +2035,7 @@ a:focus {
 	padding-left: 0;
 }
 
-.contact-socials li {
-	float: left;
+.contact-socials li {	
 	width: auto !important;
     display: inline-block !important;
     vertical-align: top;
